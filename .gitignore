@@ -1,0 +1,33 @@
+# Node.js
+node_modules/
+npm-debug.log*
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+*.tfvars
+!*.tfvars.example
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Credentials
+*.pem
+*.key
+*.p12
+*.pfx
+
+# OS and editor
+.DS_Store
+.vscode/
+.idea/

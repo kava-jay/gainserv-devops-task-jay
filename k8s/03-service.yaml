@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: gainserv-app
+  namespace: gainserv
+  labels:
+    app: gainserv-app
+spec:
+  type: ClusterIP
+  selector:
+    app: gainserv-app
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
+      protocol: TCP

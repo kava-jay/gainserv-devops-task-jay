@@ -1,0 +1,13 @@
+.git
+.gitignore
+**/node_modules
+**/.env
+**/.env.*
+**/.terraform
+**/*.tfstate
+**/*.tfstate.*
+terraform/
+k8s/
+screenshots/
+scripts/
+README.md
