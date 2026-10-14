@@ -381,3 +381,4 @@ This exercise demonstrates the **Terraform configuration and local validation**,
 
 
 I've shared the Google Drive link below for your reference. Please have a look.
+https://drive.google.com/file/d/1w6COJLKQlTygLf2aka1FhLB3vcJwaS6A/view?usp=sharing
