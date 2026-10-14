@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-test-client-http
+  namespace: gainserv
+spec:
+  podSelector:
+    matchLabels:
+      access-gainserv: "true"
+  policyTypes:
+    - Egress
+  egress:
+    - to:
+        - podSelector:
+            matchLabels:
+              app: gainserv-app
+      ports:
+        - protocol: TCP
+          port: 3000
